@@ -1,4 +1,5 @@
-```## run_analysis.R
+```{r}
+## run_analysis.R
 # here I combined the two data sets by stacking them directly on top of eachother
 train <- read.table("./UCI HAR Dataset/train/X_train.txt")
 test <- read.table("./UCI HAR Dataset/test/X_test.txt")
