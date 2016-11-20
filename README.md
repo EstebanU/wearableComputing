@@ -18,8 +18,10 @@ dataNames <- dataNames[nameIndices]
 # I assigned variable names to the data set and cleaned the names by using only alphanumeric 
 # characters i.e. mean() becomes mean
 # I also shortened the original data frame by only considering the relevant variables
+# Lastly, I appended "AVG" to each variable name so that it is clear I am taking the average
+# of each variable in lower-case letters
 df <- df[, nameIndices]
-names(df) <- gsub("[^[:alnum:]]", "", dataNames)
+names(df) <- paste("AVG", gsub("[^[:alnum:]]", "", dataNames), sep = "")
 
 
 # get activity data (walking, running, etc.) and cbind to data frame  
