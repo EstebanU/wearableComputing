@@ -16,8 +16,7 @@ dataNames <- dataNames[nameIndices]
 # I assigned variable names to the data set and cleaned the names by using only alphanumeric 
 # characters i.e. mean() becomes mean
 # I also shortened the original data frame by only considering the relevant variables
-df <- df[, nameIndices]
-# names(df) <- gsub("[^[:alnum:]]", "", dataNames)
+df <- df[, nameIndices] 
 names(df) <- paste("AVG", gsub("[^[:alnum:]]", "", dataNames), sep = "")
 
 
