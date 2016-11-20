@@ -76,7 +76,7 @@ Only variable names that compute the mean or standard deviation of that particul
 [72] AVGfBodyAccMagmeanFreq        
 [73] AVGfBodyBodyAccJerkMagmean     
 [74] AVGfBodyBodyAccJerkMagstd      
-[75] AVGfBodyBodyAccJerkMagmeanFreq
+[75] AVGfBodyBodyAccJerkMagmeanFreq   
 [76] AVGfBodyBodyGyroMagmean        
 [77] AVGfBodyBodyGyroMagstd         
 [78] AVGfBodyBodyGyroMagmeanFreq    
@@ -97,12 +97,12 @@ These signals were used to estimate variables of the feature vector for each pat
 - The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/sec^2). 
 - The gyroscope units are rad/seg.
 
-mean(): Mean value
+mean(): Mean value  
 std(): Standard deviation
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+tBodyAccMean      
+tBodyAccJerkMean       
+tBodyGyroMean      
+tBodyGyroJerkMean  
