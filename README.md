@@ -49,7 +49,7 @@ for(i in 1:length(df$activity)){
         df$activity[i] <- activityName[6]  
 }  
 
-# now we associate the subjects with the data  
+# now we associate the subjects (1 - 30) with the data  
 subjectTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt")  
 subjectTest <- read.table("./UCI HAR Dataset/test/subject_test.txt")  
 subjects <- rbind(subjectTrain, subjectTest)  
