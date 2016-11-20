@@ -1,3 +1,4 @@
+#Tidy data set variables
 The variables here have all been extracted from the Human Activity Recognition Using Smartphones Dataset. The first two variables account for the subject identified by number (1 - 30), and the activity: walking, walking downstairs, walking upstairs, siting, standing, and laying.  
 
 Only variable names that compute the mean (mean) or standard deviation (std) of that particular variable have been included. They are listed below: 
@@ -95,7 +96,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 - The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/sec^2). 
-- The gyroscope units are rad/seg.
+- The gyroscope units are rad/sec.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
