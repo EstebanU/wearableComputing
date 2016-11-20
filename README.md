@@ -1,8 +1,8 @@
-`## run_analysis.R`
-`# here I combined the two data sets by stacking them directly on top of eachother`
-`train <- read.table("./UCI HAR Dataset/train/X_train.txt")`
-`test <- read.table("./UCI HAR Dataset/test/X_test.txt")`
-`df <- rbind(train, test)`
+```## run_analysis.R
+# here I combined the two data sets by stacking them directly on top of eachother
+train <- read.table("./UCI HAR Dataset/train/X_train.txt")
+test <- read.table("./UCI HAR Dataset/test/X_test.txt")
+df <- rbind(train, test)`
 
 
 # extract mean and standard deviation variables from dataset
@@ -57,4 +57,4 @@ names(df)[1] <- "subject"
 # I took the mean of all the columns using summarise_all  
 # the tidy data set is TD  
 by_subject_activity <- group_by(df, subject, activity)  
-TD <- summarise_all(by_subject_activity, mean)
+TD <- summarise_all(by_subject_activity, mean)```
