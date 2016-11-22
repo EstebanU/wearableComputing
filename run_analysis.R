@@ -30,20 +30,7 @@ names(df)[1] <- "activity"
 
 # now that we have a column describing the activity, we will give the activity a descriptive name
 activityName <- c("walking", "walkingUpstairs", "walkingDownstairs", "sitting", "standing", "laying")
-for(i in 1:length(df$activity)){
-    if(df$activity[i] == 1){
-        df$activity[i] <- activityName[1]
-    }else if(df$activity[i] == 2){
-        df$activity[i] <- activityName[2]
-    }else if(df$activity[i] == 3){
-        df$activity[i] <- activityName[3]
-    }else if(df$activity[i] == 4){
-        df$activity[i] <- activityName[4]
-    }else if(df$activity[i] == 5){
-        df$activity[i] <- activityName[5]
-    }else
-        df$activity[i] <- activityName[6]
-}
+df$activity <- activityName[df$activity]
 
 # now we associate the subjects with the data
 subjectTrain <- read.table("./train/subject_train.txt")
